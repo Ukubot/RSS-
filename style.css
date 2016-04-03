@@ -1,6 +1,7 @@
 body {
-background-image: url("images/rss-bg.jpg");
-background-color: #171717;
+  background-image: url("images/rss-bg.jpg");
+  background-color: #171717;
+  transition-duration: 0.5;
 }
 
 .jumbotron {
@@ -14,8 +15,45 @@ background-color: #171717;
 }
 
 .RSS-Element {
+  min-width: 200px;
   height: 350px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 15px 0px;
   padding: 8px 8px 15px 8px;
+  overflow: hidden;
+}
+.RSS-Element:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.RSS-Element > h2:hover {
+  cursor: pointer;
+  color: #00d9ae;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00d9ae;
+}
+
+.RSS-Element img {
+  max-width: 240px;
+  max-height: 300px;
+ float: right;
+ padding: 25px;
+}
+
+.text-muted {
+  position: absolute;
+  bottom: 10px;
+}
+
+a .popup {
+  color: red !important;
 }
