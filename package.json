@@ -1,0 +1,16 @@
+{
+  "name": "Dev",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "",
+    "grunt-contrib-cssmin": "",
+    "grunt-contrib-jshint": "",
+    "grunt-contrib-nodeunit": "",
+    "grunt-contrib-sass": "",
+    "grunt-contrib-uglify": "",
+    "grunt-contrib-watch": "",
+    "grunt-contrib-concat": "",
+    "grunt-express": "^1.4.1",
+    "matchdep": ""
+  }
+}

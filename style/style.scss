@@ -1,18 +1,36 @@
+/*MAIN CSS*/
+
 body {
-  background-image: url("images/rss-bg.jpg");
-  background-color: #171717;
+  background-color: #D2D2D2;
   transition-duration: 0.5;
 }
 
 .jumbotron {
   background-color: #2F2E2E;
   color: #fff;
+  box-shadow: 3px 3px 2px #888888;
 }
 
 .container {
   margin: 0px 70px !important;
   width: auto;
 }
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00d9ae;
+}
+
+/*RSS FEED AND ELEMENTS */
 
 .RSS-Element {
   min-width: 200px;
@@ -21,9 +39,11 @@ body {
   margin: 15px 0px;
   padding: 8px 8px 15px 8px;
   overflow: hidden;
+  box-shadow: 3px 3px 2px #888888;
 }
 .RSS-Element:hover {
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 6px 6px 4px #888888;
 }
 .RSS-Element > h2:hover {
   cursor: pointer;
@@ -46,23 +66,31 @@ body {
   height: 300px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  text-decoration: none;
-  color: #00d9ae;
-}
-
 .RSS-Element img {
-  max-width: 240px;
-  max-height: 300px;
+  max-width: 250px;
+  max-height: 200px;
  float: right;
- padding: 25px;
+ padding: 5px;
 }
 
-a .popup {
-  color: red !important;
+/*MEDIA RULES*/
+
+@media(min-width:268px) and (max-width:991px){
+  .RSS-Element img {
+    max-width: 200px;
+    height: 150px;
+   float: left;
+   padding: 5px;
+    object-fit: contain;
+  }
+  .description {
+    display: none;
+  }
+  .RSS-Element {
+    height: auto;
+  }
+  .RSS-Text {
+    height: auto;
+    width: 100%;
+  }
 }
