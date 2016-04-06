@@ -3,7 +3,7 @@ YUI().use('yql', function(Y){
   var details = {};
   var url1 = "https://www.readability.com/api/content/v1/parser?url=";
   var testurl = "https://www.readability.com/rseero/latest/feed";
-  var urltoken = "&token=hiddenkey";
+  var urltoken = "&token=notokenhere";
   var finalurl = url1 + testurl + urltoken;
 
   var query = 'select * from rss where url = "' + testurl + '"';
@@ -36,8 +36,15 @@ YUI().use('yql', function(Y){
         var item = feedItem;
         var itemDetail = details[item.guid];
         if (itemDetail) {
-          var myWindow = window.open("", "Popup article", "width=800,height=800,scrollbars=1");
-          myWindow.document.write("<h1>"+feedItem.title+"</h1>" + "<p>" + string +"</p>" + "</br>" + "<p>" + itemDetail.content + "</p>");
+          var myWindow = window.open("", "Popup article", 'height=' + screen.height + ',width=' + screen.width + ",scrollbars=1,resizable=yes");
+          myWindow.document.write(
+            "<div class='container'><style> .container{ margin: 50px 30px;} p{ font-size: 1.3em;} ul{ font-size: 1.3em;} </style><h1>"+
+            feedItem.title+"</h1>" +
+             "<p>" + string +
+             "</p>" + "</br>" + "<p>" +
+              itemDetail.content +
+               "</p></div>"
+          );
         }
         else {
           console.log("Item not yet loaded. What do?");

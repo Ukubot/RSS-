@@ -1,7 +1,7 @@
 /*MAIN CSS*/
 
 body {
-  background-color: #D2D2D2;
+  background-color: #C1C3CE;
   transition-duration: 0.5;
 }
 
@@ -11,11 +11,18 @@ body {
   box-shadow: 3px 3px 2px #888888;
 }
 
+// CONTAINERS
+
+.popup-container {
+  background-color: red;
+}
+
 .container {
   margin: 0px 70px !important;
   width: auto;
 }
 
+// TEXTS
 h1 {
   text-align: center;
 }
@@ -29,6 +36,7 @@ a:hover {
   text-decoration: none;
   color: #00d9ae;
 }
+
 
 /*RSS FEED AND ELEMENTS */
 
@@ -78,9 +86,9 @@ a:hover {
 @media(min-width:268px) and (max-width:991px){
   .RSS-Element img {
     max-width: 200px;
-    height: 150px;
+    height: 200px;
    float: left;
-   padding: 5px;
+   padding-right: 15px;
     object-fit: contain;
   }
   .description {
