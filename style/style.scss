@@ -1,22 +1,24 @@
 /*MAIN CSS*/
+// colors
+
+$background-main: #C1C3CE;
+$background-dark: #2F2E2E;
+$box-shadow-color: #888888;
+$hover-color: #00d9ae;
+$white-transparent: rgba(255, 255, 255, 0.9);
 
 body {
-  background-color: #C1C3CE;
+  background-color: $background-main;
   transition-duration: 0.5;
 }
 
 .jumbotron {
-  background-color: #2F2E2E;
+  background-color: $background-dark;
   color: #fff;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: 3px 3px 2px $box-shadow-color;
 }
 
 // CONTAINERS
-
-.popup-container {
-  background-color: red;
-}
-
 .container {
   margin: 0px 70px !important;
   width: auto;
@@ -34,7 +36,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #00d9ae;
+  color: $hover-color;
 }
 
 
@@ -43,19 +45,19 @@ a:hover {
 .RSS-Element {
   min-width: 200px;
   height: 350px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: $white-transparent;
   margin: 15px 0px;
   padding: 8px 8px 15px 8px;
   overflow: hidden;
-  box-shadow: 3px 3px 2px #888888;
+  box-shadow: 3px 3px 2px $box-shadow-color;
 }
 .RSS-Element:hover {
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 6px 6px 4px #888888;
+  background-color: $white-transparent;
+  box-shadow: 6px 6px 4px $box-shadow-color;
 }
 .RSS-Element > h2:hover {
   cursor: pointer;
-  color: #00d9ae;
+  color: $hover-color;
 }
 
 .RSS-Element-Footer {

@@ -8,9 +8,6 @@ body {
   color: #fff;
   box-shadow: 3px 3px 2px #888888; }
 
-.popup-container {
-  background-color: red; }
-
 .container {
   margin: 0px 70px !important;
   width: auto; }
@@ -37,7 +34,7 @@ a:hover {
   box-shadow: 3px 3px 2px #888888; }
 
 .RSS-Element:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 6px 6px 4px #888888; }
 
 .RSS-Element > h2:hover {
